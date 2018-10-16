@@ -1,0 +1,1606 @@
+[
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "OpenDoc",
+			"handle": -1,
+			"id": 1,
+			"params": [
+				"Ctrl00_allObj.qvf",
+				"",
+				"",
+				"",
+				false
+			]
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"method": "OnConnected",
+			"params": {
+				"qSessionState": "SESSION_CREATED"
+			}
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 1,
+			"result": {
+				"qReturn": {
+					"qType": "Doc",
+					"qHandle": 1,
+					"qGenericId": "/Apps/Ctrl00_allObj.qvf"
+				}
+			},
+			"change": [
+				1
+			]
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "GetAuthenticatedUser",
+			"handle": -1,
+			"id": 2,
+			"params": []
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 2,
+			"result": {
+				"qReturn": "Personal\\Me"
+			}
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "EngineVersion",
+			"handle": -1,
+			"id": 3,
+			"params": []
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "GetAppLayout",
+			"handle": 1,
+			"id": 5,
+			"params": []
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "IsDesktopMode",
+			"handle": -1,
+			"id": 6,
+			"params": []
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 3,
+			"result": {
+				"qVersion": {
+					"qComponentVersion": "12.227.0"
+				}
+			}
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "CreateSessionObject",
+			"handle": 1,
+			"id": 4,
+			"params": [
+				{
+					"qInfo": {
+						"qId": "SheetList",
+						"qType": "SheetList"
+					},
+					"qAppObjectListDef": {
+						"qType": "sheet",
+						"qData": {
+							"title": "/qMetaDef/title",
+							"description": "/qMetaDef/description",
+							"cells": "/cells"
+						}
+					}
+				}
+			]
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 5,
+			"result": {
+				"qLayout": {
+					"qTitle": "Ctrl00_allObj",
+					"qFileName": "/Apps/Ctrl00_allObj.qvf",
+					"qLastReloadTime": "2016-06-14T11:57:41.319Z",
+					"qHasScript": true,
+					"qStateNames": [],
+					"qMeta": {},
+					"qLocaleInfo": {
+						"qDecimalSep": ".",
+						"qThousandSep": ",",
+						"qListSep": ";",
+						"qMoneyDecimalSep": ".",
+						"qMoneyThousandSep": ",",
+						"qCurrentYear": 2015,
+						"qMoneyFmt": "$#,##0.00;($#,##0.00)",
+						"qTimeFmt": "h:mm:ss TT",
+						"qDateFmt": "M/D/YYYY",
+						"qTimestampFmt": "M/D/YYYY h:mm:ss[.fff] TT",
+						"qCalendarStrings": {
+							"qDayNames": [
+								"Mon",
+								"Tue",
+								"Wed",
+								"Thu",
+								"Fri",
+								"Sat",
+								"Sun"
+							],
+							"qMonthNames": [
+								"Jan",
+								"Feb",
+								"Mar",
+								"Apr",
+								"May",
+								"Jun",
+								"Jul",
+								"Aug",
+								"Sep",
+								"Oct",
+								"Nov",
+								"Dec"
+							],
+							"qLongDayNames": [
+								"Monday",
+								"Tuesday",
+								"Wednesday",
+								"Thursday",
+								"Friday",
+								"Saturday",
+								"Sunday"
+							],
+							"qLongMonthNames": [
+								"January",
+								"February",
+								"March",
+								"April",
+								"May",
+								"June",
+								"July",
+								"August",
+								"September",
+								"October",
+								"November",
+								"December"
+							]
+						},
+						"qFirstWeekDay": 6,
+						"qBrokenWeeks": true,
+						"qReferenceDay": 0,
+						"qFirstMonthOfYear": 1,
+						"qCollation": "en-US"
+					},
+					"qHasData": true,
+					"qThumbnail": {
+						"qUrl": "/media/170c1fe4e5051558993ba84eac469389/QlikSense.jpg"
+					},
+					"description": "",
+					"dynamicColor": "hsla(155,18%,43%,1)"
+				}
+			}
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 4,
+			"result": {
+				"qReturn": {
+					"qType": "GenericObject",
+					"qHandle": 2,
+					"qGenericType": "SheetList",
+					"qGenericId": "SheetList"
+				}
+			},
+			"change": [
+				2
+			]
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 6,
+			"result": {
+				"qReturn": true
+			}
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "GetLayout",
+			"handle": 2,
+			"id": 7,
+			"params": []
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 7,
+			"result": {
+				"qLayout": {
+					"qInfo": {
+						"qId": "SheetList",
+						"qType": "SheetList"
+					},
+					"qSelectionInfo": {},
+					"qAppObjectList": {
+						"qItems": [
+							{
+								"qInfo": {
+									"qId": "3404f780-d272-4620-80b6-721e010f9152",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "sheet2D",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "fa4229b9-6e9b-4bea-b516-c9c717167a29",
+											"type": "gauge",
+											"col": 0,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "a19b72ab-2ca8-4b69-8082-2c100aba8c3c",
+											"type": "pivot-table",
+											"col": 7,
+											"row": 0,
+											"colspan": 17,
+											"rowspan": 3
+										},
+										{
+											"name": "c66245be-8472-4900-9f05-e07a0141ed99",
+											"type": "scatterplot",
+											"col": 7,
+											"row": 3,
+											"colspan": 17,
+											"rowspan": 5
+										},
+										{
+											"name": "8b7da3fa-45ee-4920-bd9d-419950be8f2e",
+											"type": "kpi",
+											"col": 0,
+											"row": 5,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "e94a7e71-0ebb-47c0-aeea-bd4b9eb8c69d",
+											"type": "text-image",
+											"col": 0,
+											"row": 8,
+											"colspan": 24,
+											"rowspan": 4
+										}
+									],
+									"title": "sheet2D",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "41dbb01c-d1bd-4528-be05-910ee565988b",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "sheet1D",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "7e3f0dd0-b5f2-4179-9172-d48011e167e9",
+											"type": "filterpane",
+											"col": 0,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 2
+										},
+										{
+											"name": "1074afba-0a68-4ef3-b43a-02e500cd2fd8",
+											"type": "table",
+											"col": 12,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 6
+										},
+										{
+											"name": "29ee51e0-f9bb-4a4b-8686-96dcd314727c",
+											"type": "barchart",
+											"col": 0,
+											"row": 2,
+											"colspan": 5,
+											"rowspan": 4
+										},
+										{
+											"name": "fcaf1755-a56b-4d33-a3b4-cebe86254e61",
+											"type": "linechart",
+											"col": 5,
+											"row": 2,
+											"colspan": 7,
+											"rowspan": 4
+										},
+										{
+											"name": "532bbe7a-8001-4b94-8b9e-441cc1e8aa48",
+											"type": "piechart",
+											"col": 0,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 6
+										},
+										{
+											"name": "88a8c69b-5715-4c7c-b4ae-293da7a072d9",
+											"type": "treemap",
+											"col": 6,
+											"row": 6,
+											"colspan": 9,
+											"rowspan": 6
+										},
+										{
+											"name": "5932e9a5-14e2-4f6d-8654-c719c288743e",
+											"type": "combochart",
+											"col": 15,
+											"row": 6,
+											"colspan": 9,
+											"rowspan": 6
+										}
+									],
+									"title": "sheet1D",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "6a47837c-3380-4e83-8f2f-0caab985b165",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "sheet3D",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "339f6cf9-ea32-42fe-b70e-6fc0476bed48",
+											"type": "map",
+											"col": 0,
+											"row": 0,
+											"colspan": 24,
+											"rowspan": 12
+										}
+									],
+									"title": "sheet3D",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "CVNdTAm",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "sheet3",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "RHCwPn",
+											"type": "map",
+											"col": 0,
+											"row": 0,
+											"colspan": 24,
+											"rowspan": 12
+										}
+									],
+									"title": "sheet3",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "GSNB",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Sheet Calculation Condition",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "nuCHz",
+											"type": "filterpane",
+											"col": 0,
+											"row": 0,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "frSUmz",
+											"type": "text-image",
+											"col": 6,
+											"row": 0,
+											"colspan": 18,
+											"rowspan": 3
+										},
+										{
+											"name": "DuJDJ",
+											"type": "barchart",
+											"col": 0,
+											"row": 3,
+											"colspan": 24,
+											"rowspan": 5
+										}
+									],
+									"title": "Sheet Calculation Condition",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "JuhBpt",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "MasterSheet1",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "XjwmbU",
+											"type": "barchart",
+											"col": 6,
+											"row": 9,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "bZCvHFB",
+											"type": "combochart",
+											"col": 18,
+											"row": 9,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "naSGALJ",
+											"type": "filterpane",
+											"col": 0,
+											"row": 0,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "SyZnb",
+											"type": "gauge",
+											"col": 6,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "ELvcvsJ",
+											"type": "linechart",
+											"col": 12,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 3
+										},
+										{
+											"name": "uUFDpZ",
+											"type": "map",
+											"col": 12,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "NrnEY",
+											"type": "piechart",
+											"col": 18,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "EKSBrUL",
+											"type": "pivot-table",
+											"col": 12,
+											"row": 3,
+											"colspan": 12,
+											"rowspan": 3
+										},
+										{
+											"name": "PUvSAN",
+											"type": "scatterplot",
+											"col": 0,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 6
+										},
+										{
+											"name": "HkVwxK",
+											"type": "text-image",
+											"col": 0,
+											"row": 3,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "QAr",
+											"type": "table",
+											"col": 6,
+											"row": 0,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "VevpJm",
+											"type": "treemap",
+											"col": 12,
+											"row": 9,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "ppUMK",
+											"type": "kpi",
+											"col": 6,
+											"row": 3,
+											"colspan": 6,
+											"rowspan": 3
+										}
+									],
+									"title": "MasterSheet1",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "VQTSUM",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Filter Pane  and Text \u0026 Image",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "ALGFsZ",
+											"type": "filterpane",
+											"col": 0,
+											"row": 8,
+											"colspan": 5,
+											"rowspan": 4
+										},
+										{
+											"name": "TMAvcJs",
+											"type": "filterpane",
+											"col": 8,
+											"row": 8,
+											"colspan": 7,
+											"rowspan": 4
+										},
+										{
+											"name": "Ubyp",
+											"type": "text-image",
+											"col": 18,
+											"row": 4,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "jpTaBxJ",
+											"type": "text-image",
+											"col": 0,
+											"row": 4,
+											"colspan": 5,
+											"rowspan": 3
+										},
+										{
+											"name": "hJUssV",
+											"type": "text-image",
+											"col": 8,
+											"row": 4,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "GwyUc",
+											"type": "filterpane",
+											"col": 18,
+											"row": 8,
+											"colspan": 6,
+											"rowspan": 4
+										},
+										{
+											"name": "SumfyV",
+											"type": "text-image",
+											"col": 0,
+											"row": 1,
+											"colspan": 5,
+											"rowspan": 1
+										},
+										{
+											"name": "ZZmPP",
+											"type": "text-image",
+											"col": 6,
+											"row": 1,
+											"colspan": 4,
+											"rowspan": 2
+										},
+										{
+											"name": "Jsamsb",
+											"type": "text-image",
+											"col": 11,
+											"row": 1,
+											"colspan": 2,
+											"rowspan": 2
+										},
+										{
+											"name": "ZsbBur",
+											"type": "text-image",
+											"col": 14,
+											"row": 1,
+											"colspan": 3,
+											"rowspan": 2
+										},
+										{
+											"name": "VvEUTD",
+											"type": "text-image",
+											"col": 18,
+											"row": 1,
+											"colspan": 4,
+											"rowspan": 2
+										}
+									],
+									"title": "Filter Pane  and Text \u0026 Image",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "aFjjST",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Maps",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "xQKsc",
+											"type": "map",
+											"col": 0,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 12
+										}
+									],
+									"title": "Maps",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "dYZkN",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Tables \u0026 Pivot Tables",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "wGKBMM",
+											"type": "pivot-table",
+											"col": 0,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 6
+										},
+										{
+											"name": "XbVzTCh",
+											"type": "pivot-table",
+											"col": 8,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 6
+										},
+										{
+											"name": "pAhvxJQ",
+											"type": "pivot-table",
+											"col": 16,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 6
+										},
+										{
+											"name": "EFUmpQ",
+											"type": "table",
+											"col": 0,
+											"row": 7,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "LkpcR",
+											"type": "table",
+											"col": 8,
+											"row": 7,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "uHzBpZv",
+											"type": "table",
+											"col": 16,
+											"row": 7,
+											"colspan": 8,
+											"rowspan": 5
+										}
+									],
+									"title": "Tables \u0026 Pivot Tables",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "esXkULt",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "MasterSheet2",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "XffY",
+											"type": "filterpane",
+											"col": 0,
+											"row": 0,
+											"colspan": 6,
+											"rowspan": 6
+										},
+										{
+											"name": "ZCgtkh",
+											"type": "filterpane",
+											"col": 12,
+											"row": 0,
+											"colspan": 6,
+											"rowspan": 6
+										},
+										{
+											"name": "tasxmrc",
+											"type": "filterpane",
+											"col": 18,
+											"row": 0,
+											"colspan": 6,
+											"rowspan": 12
+										},
+										{
+											"name": "cQTurT",
+											"type": "barchart",
+											"col": 0,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 6
+										},
+										{
+											"name": "mGp",
+											"type": "barchart",
+											"col": 6,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 6
+										},
+										{
+											"name": "RednFCk",
+											"type": "barchart",
+											"col": 12,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 6
+										}
+									],
+									"title": "MasterSheet2",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "gJfAjj",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Bar Charts",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "XAPJvj",
+											"type": "barchart",
+											"col": 0,
+											"row": 0,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "hhaN",
+											"type": "barchart",
+											"col": 6,
+											"row": 3,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "tmnqgR",
+											"type": "barchart",
+											"col": 13,
+											"row": 3,
+											"colspan": 11,
+											"rowspan": 3
+										},
+										{
+											"name": "gNM",
+											"type": "barchart",
+											"col": 0,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "BhJBj",
+											"type": "barchart",
+											"col": 19,
+											"row": 6,
+											"colspan": 5,
+											"rowspan": 3
+										},
+										{
+											"name": "BcJyGT",
+											"type": "barchart",
+											"col": 13,
+											"row": 9,
+											"colspan": 4,
+											"rowspan": 3
+										},
+										{
+											"name": "mSNXpjj",
+											"type": "barchart",
+											"col": 13,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "anmpmjq",
+											"type": "barchart",
+											"col": 6,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "TQfAas",
+											"type": "barchart",
+											"col": 0,
+											"row": 3,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "dfbgtd",
+											"type": "barchart",
+											"col": 13,
+											"row": 0,
+											"colspan": 4,
+											"rowspan": 3
+										},
+										{
+											"name": "Qkpy",
+											"type": "barchart",
+											"col": 17,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "pcmJZa",
+											"type": "barchart",
+											"col": 6,
+											"row": 6,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "CPKEjQP",
+											"type": "barchart",
+											"col": 0,
+											"row": 9,
+											"colspan": 6,
+											"rowspan": 3
+										},
+										{
+											"name": "TfJeGV",
+											"type": "barchart",
+											"col": 6,
+											"row": 9,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "RznsJc",
+											"type": "barchart",
+											"col": 17,
+											"row": 9,
+											"colspan": 7,
+											"rowspan": 3
+										}
+									],
+									"title": "Bar Charts",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "hQDEATt",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "TreeMaps",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "RaQyNmU",
+											"type": "treemap",
+											"col": 0,
+											"row": 0,
+											"colspan": 8,
+											"rowspan": 5
+										},
+										{
+											"name": "gdJaz",
+											"type": "treemap",
+											"col": 0,
+											"row": 6,
+											"colspan": 8,
+											"rowspan": 6
+										},
+										{
+											"name": "LXJqzzq",
+											"type": "treemap",
+											"col": 9,
+											"row": 0,
+											"colspan": 14,
+											"rowspan": 11
+										}
+									],
+									"title": "TreeMaps",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "hSTsZt",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Line charts",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "cbVHSUk",
+											"type": "linechart",
+											"col": 0,
+											"row": 0,
+											"colspan": 8,
+											"rowspan": 4
+										},
+										{
+											"name": "aGvPJp",
+											"type": "linechart",
+											"col": 8,
+											"row": 0,
+											"colspan": 8,
+											"rowspan": 4
+										},
+										{
+											"name": "efcNyfp",
+											"type": "linechart",
+											"col": 0,
+											"row": 7,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "ZRybA",
+											"type": "linechart",
+											"col": 8,
+											"row": 7,
+											"colspan": 9,
+											"rowspan": 5
+										},
+										{
+											"name": "VeQpVnP",
+											"type": "linechart",
+											"col": 17,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 4
+										}
+									],
+									"title": "Line charts",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "mBshXB",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "sheet1",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "FvFMQjL",
+											"type": "filterpane",
+											"col": 0,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 2
+										},
+										{
+											"name": "LQCanwJ",
+											"type": "table",
+											"col": 12,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 6
+										},
+										{
+											"name": "JpcpmT",
+											"type": "barchart",
+											"col": 0,
+											"row": 2,
+											"colspan": 5,
+											"rowspan": 4
+										},
+										{
+											"name": "KtpdU",
+											"type": "linechart",
+											"col": 5,
+											"row": 2,
+											"colspan": 7,
+											"rowspan": 4
+										},
+										{
+											"name": "TmfVzX",
+											"type": "piechart",
+											"col": 0,
+											"row": 6,
+											"colspan": 6,
+											"rowspan": 6
+										},
+										{
+											"name": "NBMVsP",
+											"type": "treemap",
+											"col": 6,
+											"row": 6,
+											"colspan": 9,
+											"rowspan": 6
+										},
+										{
+											"name": "tCxXew",
+											"type": "combochart",
+											"col": 15,
+											"row": 6,
+											"colspan": 9,
+											"rowspan": 6
+										}
+									],
+									"title": "sheet1",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "mkeka",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Combo Charts",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "LNabD",
+											"type": "combochart",
+											"col": 0,
+											"row": 0,
+											"colspan": 8,
+											"rowspan": 5
+										},
+										{
+											"name": "CPPCtj",
+											"type": "combochart",
+											"col": 8,
+											"row": 0,
+											"colspan": 9,
+											"rowspan": 5
+										},
+										{
+											"name": "fjETFn",
+											"type": "combochart",
+											"col": 0,
+											"row": 5,
+											"colspan": 8,
+											"rowspan": 7
+										},
+										{
+											"name": "BBabPm",
+											"type": "combochart",
+											"col": 8,
+											"row": 5,
+											"colspan": 9,
+											"rowspan": 7
+										},
+										{
+											"name": "eXPkSg",
+											"type": "combochart",
+											"col": 17,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "XAhMkS",
+											"type": "combochart",
+											"col": 17,
+											"row": 5,
+											"colspan": 7,
+											"rowspan": 7
+										}
+									],
+									"title": "Combo Charts",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "ppjDSJ",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "sheet2",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "PaMnJfP",
+											"type": "gauge",
+											"col": 0,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "hkDzPW",
+											"type": "pivot-table",
+											"col": 7,
+											"row": 0,
+											"colspan": 17,
+											"rowspan": 3
+										},
+										{
+											"name": "CnXmja",
+											"type": "scatterplot",
+											"col": 7,
+											"row": 3,
+											"colspan": 17,
+											"rowspan": 5
+										},
+										{
+											"name": "fLXy",
+											"type": "kpi",
+											"col": 0,
+											"row": 5,
+											"colspan": 7,
+											"rowspan": 3
+										},
+										{
+											"name": "cwqJNQ",
+											"type": "text-image",
+											"col": 0,
+											"row": 8,
+											"colspan": 9,
+											"rowspan": 4
+										},
+										{
+											"name": "mqHMtkm",
+											"type": "pivot-table",
+											"col": 9,
+											"row": 8,
+											"colspan": 15,
+											"rowspan": 4
+										}
+									],
+									"title": "sheet2",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "rkuwZh",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Pie chart's",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "VPmt",
+											"type": "piechart",
+											"col": 0,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "GCuLj",
+											"type": "piechart",
+											"col": 0,
+											"row": 6,
+											"colspan": 7,
+											"rowspan": 6
+										},
+										{
+											"name": "fJKJZc",
+											"type": "piechart",
+											"col": 7,
+											"row": 6,
+											"colspan": 7,
+											"rowspan": 6
+										},
+										{
+											"name": "uHfjq",
+											"type": "piechart",
+											"col": 7,
+											"row": 0,
+											"colspan": 7,
+											"rowspan": 5
+										},
+										{
+											"name": "UVahMU",
+											"type": "piechart",
+											"col": 14,
+											"row": 6,
+											"colspan": 10,
+											"rowspan": 6
+										},
+										{
+											"name": "NxTZDm",
+											"type": "piechart",
+											"col": 14,
+											"row": 0,
+											"colspan": 10,
+											"rowspan": 5
+										}
+									],
+									"title": "Pie chart's",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "f57d852f-f248-4a1a-a15b-015e60147cf8",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Boxplots",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "uaHYE",
+											"type": "boxplot",
+											"col": 0,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 12
+										},
+										{
+											"name": "fCHrRdn",
+											"type": "boxplot",
+											"col": 12,
+											"row": 0,
+											"colspan": 12,
+											"rowspan": 12
+										}
+									],
+									"title": "Boxplots",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "70256cd8-abe1-42b2-99e6-36665130ec03",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Distribution Plots",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "sDuuGK",
+											"type": "distributionplot",
+											"col": 7,
+											"row": 6,
+											"colspan": 17,
+											"rowspan": 6
+										},
+										{
+											"name": "JPzUJ",
+											"type": "distributionplot",
+											"col": 0,
+											"row": 6,
+											"colspan": 7,
+											"rowspan": 6
+										},
+										{
+											"name": "QjPQnKP",
+											"type": "distributionplot",
+											"col": 0,
+											"row": 0,
+											"colspan": 24,
+											"rowspan": 6
+										}
+									],
+									"title": "Distribution Plots",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "fEPFmQ",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Scatter Plots",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "pYkJH",
+											"type": "scatterplot",
+											"col": 0,
+											"row": 0,
+											"colspan": 11,
+											"rowspan": 4
+										},
+										{
+											"name": "evzqxe",
+											"type": "scatterplot",
+											"col": 0,
+											"row": 8,
+											"colspan": 7,
+											"rowspan": 4
+										},
+										{
+											"name": "RmhqnQT",
+											"type": "scatterplot",
+											"col": 11,
+											"row": 0,
+											"colspan": 13,
+											"rowspan": 4
+										},
+										{
+											"name": "PhZtQ",
+											"type": "scatterplot",
+											"col": 14,
+											"row": 8,
+											"colspan": 10,
+											"rowspan": 4
+										},
+										{
+											"name": "bKn",
+											"type": "scatterplot",
+											"col": 0,
+											"row": 4,
+											"colspan": 11,
+											"rowspan": 4
+										},
+										{
+											"name": "zJSbv",
+											"type": "scatterplot",
+											"col": 11,
+											"row": 4,
+											"colspan": 13,
+											"rowspan": 4
+										},
+										{
+											"name": "CWHcvpF",
+											"type": "scatterplot",
+											"col": 7,
+											"row": 8,
+											"colspan": 7,
+											"rowspan": 4
+										}
+									],
+									"title": "Scatter Plots",
+									"description": ""
+								}
+							},
+							{
+								"qInfo": {
+									"qId": "6b9169cc-d6de-4fae-9520-d674e2ded148",
+									"qType": "sheet"
+								},
+								"qMeta": {
+									"title": "Histograms",
+									"description": ""
+								},
+								"qData": {
+									"cells": [
+										{
+											"name": "ykjZ",
+											"type": "histogram",
+											"col": 0,
+											"row": 0,
+											"colspan": 11,
+											"rowspan": 4
+										},
+										{
+											"name": "BvCKL",
+											"type": "histogram",
+											"col": 11,
+											"row": 0,
+											"colspan": 13,
+											"rowspan": 4
+										},
+										{
+											"name": "mqKjf",
+											"type": "histogram",
+											"col": 0,
+											"row": 4,
+											"colspan": 11,
+											"rowspan": 8
+										},
+										{
+											"name": "pHjJnUa",
+											"type": "histogram",
+											"col": 11,
+											"row": 4,
+											"colspan": 13,
+											"rowspan": 8
+										}
+									],
+									"title": "Histograms",
+									"description": ""
+								}
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "GetProperties",
+			"handle": 2,
+			"id": 8,
+			"params": []
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 8,
+			"result": {
+				"qProp": {
+					"qInfo": {
+						"qId": "SheetList",
+						"qType": "SheetList"
+					},
+					"qMetaDef": {},
+					"qAppObjectListDef": {
+						"qType": "sheet",
+						"qData": {
+							"title": "/qMetaDef/title",
+							"description": "/qMetaDef/description",
+							"cells": "/cells"
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"Sent": {
+			"jsonrpc": "2.0",
+			"delta": false,
+			"method": "ClearAll",
+			"handle": 1,
+			"id": 9,
+			"params": [
+				false,
+				""
+			]
+		}
+	},
+	{
+		"Received": {
+			"jsonrpc": "2.0",
+			"id": 9,
+			"result": {},
+			"change": [
+				1
+			]
+		}
+	}
+]
