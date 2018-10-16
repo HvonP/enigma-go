@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"sync"
 )
 
 type (
@@ -83,12 +84,27 @@ func (t *MockSocket) Close() error {
 
 // NewMockSocket creates a new MockSocket instance
 func NewMockSocket(fileName string) (*MockSocket, error) {
+	var wg sync.WaitGroup
 	socket := &MockSocket{receivedMessages: make(chan json.RawMessage, 100), expectedRequests: make(chan *mocksocketRequest, 10000), closed: make(chan struct{})}
 	if fileName != "" {
 		var lastRequest *mocksocketRequest
 		messages := readTrafficLog(fileName)
+
+		trafficLog := []trafficEntry{}
+		trafficMapLog := trafficMap{trafficLog}
+
+		//trafficMapLog.hashTrafficLog(path.Dir(fileName) + "/CLEARALL.socket.traffic")
+		trafficMapLog.hashTrafficLog(fileName)
+
+		trafficLive := []trafficEntry{}
+		trafficMapLive := trafficMap{trafficLive}
+
 		for _, m := range messages {
 			if m.Sent != nil {
+				// Append the "live" sent message to the live log which handles and sets correct hash etc..
+				wg.Add(1)
+				trafficMapLive.liveTrafficLog(m.Sent, &wg)
+
 				lastRequest = &mocksocketRequest{sentMessage: m.Sent}
 				socket.expectedRequests <- lastRequest
 			} else if m.Received != nil {
@@ -97,11 +113,15 @@ func NewMockSocket(fileName string) (*MockSocket, error) {
 					socket.receivedMessages <- m.Received
 				} else {
 					// When a request has been sent then add the responses to that request
+					// Alter the ID of the response first though to match the sent
+					wg.Add(1)
+					ensureCorrectID(m.Received, trafficMapLive, trafficMapLog, &wg)
 					lastRequest.responses = append(lastRequest.responses, m.Received)
 				}
 
 			}
 		}
 	}
+	wg.Wait()
 	return socket, nil
 }

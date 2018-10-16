@@ -2,11 +2,11 @@ package main
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
-	"github.com/qlik-oss/enigma-go"
-	"runtime"
 	"path"
+	"runtime"
+
+	"github.com/qlik-oss/hvonp-enigma-go"
 )
 
 const script = `
@@ -21,18 +21,17 @@ func main() {
 	_, filename, _, _ := runtime.Caller(0)
 	trafficFileName := path.Dir(filename) + "/socket.traffic"
 
-	liveDialer := &enigma.Dialer{TrafficDumpFile:trafficFileName, MockMode:false}
-	mockDialer := &enigma.Dialer{TrafficDumpFile:trafficFileName, MockMode:true}
+	//liveDialer := &enigma.Dialer{TrafficDumpFile:trafficFileName, MockMode:false}
+	mockDialer := &enigma.Dialer{TrafficDumpFile: trafficFileName, MockMode: true}
 
-	fmt.Println("Running scenario against live Qlik Associative Engine while recording traffic")
-	runScenarioWithDialer(liveDialer)
+	//fmt.Println("Running scenario against live Qlik Associative Engine while recording traffic")
+	//runScenarioWithDialer(liveDialer)
 
 	fmt.Println("Running the same scenario against mock socket with replayed QIX traffic from the previous run")
 	runScenarioWithDialer(mockDialer)
 }
 
 func runScenarioWithDialer(dialer *enigma.Dialer) {
-
 
 	// Open the session and create a session document:
 	ctx := context.Background()
@@ -64,19 +63,19 @@ func runScenarioWithDialer(dialer *enigma.Dialer) {
 	})
 
 	// Get hypercube layout
-	layout, _ := object.GetLayout(ctx)
+	_, _ = object.GetLayout(ctx)
 
-	HyperCubeDataPagesAsJSON, _ := json.MarshalIndent(layout.HyperCube.DataPages, "", "  ")
+	//HyperCubeDataPagesAsJSON, _ := json.MarshalIndent(layout.HyperCube.DataPages, "", "  ")
 
-	fmt.Println(fmt.Sprintf("Hypercube data pages: %s", HyperCubeDataPagesAsJSON))
+	//fmt.Println(fmt.Sprintf("Hypercube data pages: %s", HyperCubeDataPagesAsJSON))
 	// Select cells at position 0, 2 and 4 in the dimension.
 	object.SelectHyperCubeCells(ctx, "/qHyperCubeDef", []int{0, 2, 4}, []int{0}, false, false)
 	// Get layout and view the selected values
-	fmt.Println("After selection (notice the `qState` values)")
-	layout, _ = object.GetLayout(ctx)
+	//fmt.Println("After selection (notice the `qState` values)")
+	_, _ = object.GetLayout(ctx)
 
-	HyperCubeDataPagesAsJSON, _ = json.MarshalIndent(layout.HyperCube.DataPages, "", "  ")
-	fmt.Println(fmt.Sprintf("Hypercube data pages after selection: %s", HyperCubeDataPagesAsJSON))
+	//HyperCubeDataPagesAsJSON, _ = json.MarshalIndent(layout.HyperCube.DataPages, "", "  ")
+	//fmt.Println(fmt.Sprintf("Hypercube data pages after selection: %s", HyperCubeDataPagesAsJSON))
 	// Close the session
 	global.DisconnectFromServer()
 
